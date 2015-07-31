@@ -1,0 +1,63 @@
+body {
+    background: url(http://subtlepatterns.com/patterns/little_pluses.png);
+    height: 768px;
+    font-size: 100%;
+}
+
+form input {
+    position: relative;
+    left: 500px;
+    width: 150px;
+    height: 20px;
+}
+
+.note {
+    background-color: yellow;
+    border: 1px solid #000;
+    width: 180px;
+    height: 120px;
+    resize: both;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+div.titleBar {
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+    background-color: #000;
+}
+
+textarea,
+.textarea {
+    background-color: #FCFAAD;
+    /*內容嵌入顯示區域，捲軸不會出現*/
+    overflow: hidden;
+    /*符合parent的width and height*/
+    width: 100%;
+    height: 100%;
+    /*拿掉右下角拖拉符號*/
+    resize: none;
+    /*border拿掉*/
+    border: 0;
+}
+
+textarea:focus {
+    /*修改文字時不顯示element邊框*/
+    outline: none;
+}
+
+
+/*設定add/delete按鈕*/
+
+img.addInBar {
+    float: left;
+    width: 15px;
+    margin: 4px;
+}
+
+img.deleteInBar {
+    float: right;
+    margin: 4px;
+    width: 14px;
+}
